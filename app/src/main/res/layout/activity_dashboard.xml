@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Dashboard">
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="Lista de Recetas (Darle al boton para agregar!)"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_btn_widget"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:clickable="true"
+        app:backgroundTint="#FD3B3B"
+        app:srcCompat="@android:drawable/ic_input_add" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="20dp"
+    android:layout_marginTop="10dp">
+</androidx.recyclerview.widget.RecyclerView>
+<Button
+android:id="@+id/close"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_marginHorizontal="20dp"
+android:layout_marginTop="10dp"
+android:backgroundTint="#FD3B3B"
+android:text="Cerrar sesion" />
+    </LinearLayout>
